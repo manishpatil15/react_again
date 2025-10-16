@@ -1,3 +1,16 @@
-const heading = React.createElement('h1', {id:"heading", className: "heading"}, 'Welcome to react page');
-    const root  = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(heading);
+const heading = React.createElement(
+  "div",
+  { id: "parent", className: "parent" },
+  React.createElement(
+    "div",
+    { id: "child1", className: "child1" },
+    React.createElement("h1", {}, "I am h1 tag inside child 1 div")
+  ),
+  React.createElement(
+    "div",
+    { id: "child2", className: "child2" },
+    React.createElement("h1", {}, "I am h1 tag inside child 2 div")
+  )
+);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
