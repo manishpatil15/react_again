@@ -4,7 +4,11 @@ const heading = React.createElement(
   React.createElement(
     "div",
     { id: "child1", className: "child1" },
-    React.createElement("h1", {}, "I am h1 tag inside child 1 div")
+    [
+      React.createElement("h1", {}, "I am h1 tag inside child 1 div"),
+      React.createElement("h2", {}, "I am h2 tag inside child 1 div"),
+      React.createElement("h3", {}, "I am h3 tag inside child 1 div")
+    ]
   ),
   React.createElement(
     "div",
