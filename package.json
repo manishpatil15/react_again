@@ -1,0 +1,32 @@
+{
+  "name": "again_practice",
+  "version": "1.0.0",
+  "description": "this is for again practice",
+  "keywords": [
+    "write",
+    "lone"
+  ],
+  "homepage": "https://github.com/manishpatil15/react_again#readme",
+  "bugs": {
+    "url": "https://github.com/manishpatil15/react_again/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishpatil15/react_again.git"
+  },
+  "license": "ISC",
+  "author": "manish",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html --port 3000 --open",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
